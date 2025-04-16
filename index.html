@@ -341,7 +341,7 @@
         // Load movie data from TSV file
         async function loadMovieData() {
             try {
-                const response = await fetch('./top1.tsv');
+                const response = await fetch('./top100.tsv');
                 if (!response.ok) {
                     throw new Error(`Erreur HTTP! Statut: ${response.status}`);
                 }
